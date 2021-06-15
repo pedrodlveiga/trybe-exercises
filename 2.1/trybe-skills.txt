@@ -8,3 +8,5 @@ Concentracao
 Criatividade
 Resiliencia
 Eficiencia
+- HTML
+- CSS
