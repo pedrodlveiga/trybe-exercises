@@ -1,7 +1,9 @@
 - Unix
 - Bash
-
 - Git
 - HTML
-
 - CSS
+- JAVASCRIPT
+- JQUERY
+- BOOTSTRAP
+- REACT
