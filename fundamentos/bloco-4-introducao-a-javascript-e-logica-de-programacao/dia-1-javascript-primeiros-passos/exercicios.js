@@ -60,6 +60,35 @@ if (number >= 0.1){
     console.log('zero');
 }
 
+// Exercício 05
+
+let lado1 = 80;
+let lado2 = 10;
+let lado3 = 60;
+
+angulos = lado1 + lado2 + lado3;
+
+if (angulos === 180) {
+    console.log('true');
+
+} else if (lado1 < 0 || lado2 < 0 || lado3 < 0) {
+    console.log('ERRO: o valor de algum ângulo do triângulo é negativo.');
+
+} else if (angulos != 180) {
+    console.log('false');
+
+} else {
+    console.log('.');
+}
+
+// Exercício 06
+
+
+
+
+
+
+
 
 
 
