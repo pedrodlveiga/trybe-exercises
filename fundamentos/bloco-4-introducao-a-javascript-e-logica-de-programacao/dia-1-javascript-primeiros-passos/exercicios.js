@@ -83,6 +83,35 @@ if (angulos === 180) {
 
 // Exercício 06
 
+// Exercício 07
+
+let nota = 0;
+
+if(nota > 100) {
+    console.log('Nota inválida');
+} else if (nota === 100) {
+    console.log('Aprovado com conceito A');
+} else if (nota >= 90) {
+    console.log('Aprovado com conceito A');
+} else if(nota >= 80) {
+    console.log('Aprovado com conceito B');
+} else if(nota >= 70) {
+    console.log('Aprovado com conceito C');
+} else if(nota >= 60) {
+    console.log('Aprovado com conceito D');
+} else if(nota >= 50) {
+    console.log('Aprovado com conceito E');
+} else if(nota < 50) {
+    console.log('em recuperação com conceito F');
+} else if(nota === 0) { 
+        console.log('Reprovado');
+} else {
+    console.log('Nota inválida.')
+}
+
+
+
+
 
 
 
