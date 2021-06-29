@@ -83,6 +83,33 @@ if (angulos === 180) {
 
 // Exercício 06
 
+let pecaXadrez = 'bispo';
+
+switch (pecaXadrez.toLowerCase()) {
+  case 'rei':
+    console.log('Rei-> Uma casa para qualquer direção.');
+    break;
+  case 'bispo':
+    console.log('Bispo-> Diagonal.');
+    break;
+  case 'rainha':
+    console.log('Rainha-> Diagonal, horizontal e vertical.');
+    break;
+  case 'cavalo':
+    console.log('Cavalo -> "L" podendo pular sobre as peças.');
+    break;
+  case 'torre':
+    console.log('Torre -> Horizontal e vertical.');
+    break;
+  case 'peão':
+    console.log("Peão -> Apenas uma casa para frente, podendo, no primeiro movimento, andar duas casas.");
+    break;
+  default:
+    console.log('Erro, peça inexistente!');
+    break;
+};
+
+
 // Exercício 07
 
 let nota = 0;
@@ -108,6 +135,124 @@ if(nota > 100) {
 } else {
     console.log('Nota inválida.')
 }
+
+// Exercício 08
+
+
+let n1 = 69;
+let n2 = 485;
+let n3 = 23;
+
+if(n1%2 == 0 || n2%2 == 0 || n3%2 == 0){
+    console.log(true);
+} else {
+    console.log(false)
+}
+
+// Exerxício 09
+
+let nb1 = 12;
+let nb2 = 10;
+let nb3 = 28;
+
+if(nb1%2 !== 0 || nb2%2 !== 0 || nb3%2 !== 0){
+    console.log(true);
+} else {
+    console.log(false)
+}
+
+// Exercício 10
+
+let custoProduto = 200;
+let valorVenda = 400;
+
+let valorCustoTotal = (custoProduto * 20 / 100) + custoProduto;
+let lucro = (valorVenda - valorCustoTotal) * 1000;
+
+if(valorVenda < 0){
+    console.log('ERRO: o número fornecido é inválido.');
+
+} else if ( custoProduto < 0){ 
+    console.log('ERRO: o número fornecido é inválido.');
+
+} else {
+    console.log('o lucro é de R$ ' + lucro);
+} 
+
+// Exercício 11
+
+let bruto = 3000; // Por favor, informe o salário bruto.
+let inss; /* (9 / 100) * bruto; */ // Informe a alíquota do INSS.
+let imposto;  
+
+if (bruto > 5189.82) {
+    inss = 570.88
+    console.log("INSS é igual a R$ " + inss);
+
+
+} else if (bruto <= 5189.82 && bruto >= 2594.93) {
+    inss = (11 / 100) * bruto;
+    console.log("INSS é igual a R$ " + inss);
+   
+
+} else if (bruto <= 2594.93 && bruto >= 1556.95) {
+    inss = (9 / 100) * bruto;;
+    console.log("INSS é igual a R$ " + inss);
+    
+    
+} else if (bruto <= 1556.94) {
+    inss = (8 / 100) * bruto;
+    console.log("INSS é igual a R$ " + inss);
+
+
+} else {
+    console.log('programa finalizado.')
+}
+
+let salBase = bruto - inss;
+
+if (salBase >= 4664.68) {
+    imposto = ((27.5 / 100) * salBase) - 869.36;
+    console.log ('o valor da alíquita do imposto é R$ ' +  imposto);
+    console.log('o salario liquido é igual a R$ ' + (salBase - imposto));
+
+} else if (salBase < 4664.68 && salBase >= 3751.06) {
+    imposto = ((22.5 / 100) * salBase) - 636.13;
+    console.log('o valor da alíquota do imposto é R$ ' + imposto); 
+    console.log("o salario liquido é igual a R$ " + (salBase - imposto));
+
+} else if (salBase <= 3741.05 && salBase >= 2826.66) {
+    imposto = ((15 / 100) * salBase) - 354.80;
+    console.log('o valor da alíquota do imposto é R$ ' + imposto); 
+    console.log("o salario liquido é igual a R$ " + (salBase - imposto));    
+
+} else if (salBase <= 2826.65 && salBase >= 1903.99) {
+    imposto = ((7.5 / 100) * salBase) - 142.80;
+    console.log('o valor da alíquota  do imposto é R$ ' + imposto); 
+    console.log("o salario liquido é igual a R$ " + (salBase - imposto));
+
+} else {
+    imposto = 0;
+    console.log('o contribuinte é isento, ou seja, IR = ' + imposto); 
+    console.log("o salario liquido é igual a R$ " + salBase);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
