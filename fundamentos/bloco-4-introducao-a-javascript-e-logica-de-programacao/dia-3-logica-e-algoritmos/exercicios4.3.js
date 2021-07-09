@@ -100,7 +100,7 @@ for (let line = 1; line <= middle; line += 1) {
     let numDeDivisores = 1;
     for(let cont = 2; cont <= numero; cont += 1){   // o cont começa com 02 pois nesse caso é ignorado o número 01 e o próprio número.
         if(numero % cont === 0){
-            numDeDivisores = numDeDivisores + 1               // divisores++ ou divisores += 1
+            numDeDivisores = numDeDivisores + 1               // adiciona mais um no divisores, podendo ser também divisores++ ou divisores += 1 
         }
     }
     // VERIFICAÇÃO 
