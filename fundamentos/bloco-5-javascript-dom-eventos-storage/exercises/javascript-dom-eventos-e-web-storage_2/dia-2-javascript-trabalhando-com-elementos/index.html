@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    
+      let corpo = document.getElementsByTagName("body")[0];
+      let title = document.createElement("h1");
+      title.className = "title";
+      corpo.appendChild(title);
+      
+      let main = document.createElement("main");
+      document.getElementsByTagName("main");
+      main.className = "main-content";
+      corpo.appendChild(main);
+
+      let insereNaMain = document.getElementsByTagName("main")[0];
+      let secao = document.createElement("section");
+      document.getElementsByTagName("section");
+      secao.className = "center-content";
+      insereNaMain.appendChild(secao);
+      
+      let insereNaSecao = document.getElementsByTagName("section")[0];
+      let p = document.createElement("p");
+      document.getElementsByTagName("p");
+      insereNaSecao.appendChild(p);
+      console.log(document.getElementsByTagName("p").innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+      
+      let secaoLeft = document.createElement("section");
+      document.getElementsByTagName("section")[1];
+      secaoLeft.className = "left-content";
+      insereNaMain.appendChild(secaoLeft);
+
+      let secaoRight = document.createElement("section");
+      document.getElementsByTagName("section")[1];
+      secaoRight.className = "right-content";
+      insereNaMain.appendChild(secaoRight);
+
+      let insereImg = document.getElementsByTagName("section")[1];
+      let img = document.createElement("img");
+      document.getElementsByTagName("img");
+      img.className = "small-image";
+      insereImg.appendChild(img);
+      document.getElementsByTagName("img")[0].src = "https://picsum.photos/200"
+
+      
+      
+      let listaUl = document.createElement("ul");
+      secaoRight.appendChild(listaUl);
+      let arrayNumeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for(let index = 0; index < arrayNumeros.length; index += 1){
+          let itensLi = document.createElement("li");
+          itensLi.innerText = arrayNumeros[index];
+          listaUl.appendChild(itensLi);
+
+      }
+
+      for(let i = 0; i <= 3; i += 1){
+          const criaH3 = document.createElement("h3");
+          criaH3.innerHTML = 'Show ' + i;
+          insereNaMain.appendChild(criaH3)
+          criaH3.className = "description"
+        
+      }
+      
+
+     let remSectionLeft = document.getElementsByClassName("left-content")[0];
+     insereNaMain.removeChild(remSectionLeft);
+
+     let sectRight = document.getElementsByClassName("right-content")[0];
+     sectRight.style.marginRight = "auto";
+
+    
+     let alteraCorMain = document.getElementsByClassName("center-content")[0];
+     alteraCorMain.parentNode.style.backgroundColor = "green";
+
+     let removeLiNove = document.getElementsByTagName("li")[8];
+     listaUl.removeChild(removeLiNove);
+
+     let removeLiDez = document.getElementsByTagName("li")[8];
+     listaUl.removeChild(removeLiDez);
+
+
+
+
+
+
+    
+            
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
