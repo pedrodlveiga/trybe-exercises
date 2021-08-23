@@ -109,6 +109,8 @@ clique.addEventListener('click', contagem);
 
 // EXERCÍCIO 04
 
+//FUNÇÃO 01
+
 const array = "Tryber x aqui!";
 
 function funcOne(string) {
@@ -130,11 +132,11 @@ const funcTwo = (skills) => skills.sort((a, b) => { return a.localeCompare(b); }
 // console.log(funcTwo(array2));
 
 // CONCATENAÇÃO usando template literals.
+
 console.log(`${funcOne("Pedro")} 
 Tudo bem? 
 As minhas cinco principais habilidades são: 
 ${funcTwo(array2)}.`)
-
 
 
 
